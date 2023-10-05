@@ -13,8 +13,6 @@ const RandomActivity = (props) => {
         <div>
             <h2>Activities Info</h2>
             <p>{props.activity}</p>
-            <p>{props.type}</p>
-            <p>{props.price}</p>
         </div>
         <button onClick={fetchActivity}>Fetch Random Activity</button>
         </>
@@ -22,10 +20,7 @@ const RandomActivity = (props) => {
 }
 
 const mapStateToProps = state => ({
-    activity: state.activity,
-    type: state.type,
-    price: state.price,
-    error: state.error
+    activity: state.activity
 })
 
 export default connect(mapStateToProps, {getActivity})(RandomActivity);
