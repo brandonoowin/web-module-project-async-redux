@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      Async Redux Project
+      <h1>Async Redux Project</h1>
     </div>
   );
 }
